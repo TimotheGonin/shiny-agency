@@ -5,6 +5,8 @@ import Home from './pages/Home'
 import Survey from './pages/Survey'
 import Header from './components/Header'
 import Error from './components/Error'
+import Results from './pages/Results'
+import Freelances from './pages/Freelances'
 
 ReactDOM.render(
   <React.StrictMode>
@@ -16,6 +18,12 @@ ReactDOM.render(
         </Route>
         <Route path="/survey/:questionNumber">
           <Survey />
+        </Route>
+        <Route path="/results">
+          <Results />
+        </Route>
+        <Route path="/freelances">
+          <Freelances />
         </Route>
         <Route>
           <Error />
